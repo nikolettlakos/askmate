@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question</title>
+</head>
+<body>
+        <h1>{{ title }}</h1>
+        <h2>Detailed question:</h2>
+        <p>{{ question_msg }}</p>
+        <h2>Answer(s):</h2>
+        {% if question_id %}
+            <td>{{ answer }}</td>
+        {% endif %}
+    <br>
+    <br>
+        <a href="/question/{{ question_id }}/new-answer"><button>Add new answer</button></a>
+    <br>
+        <a href="/">
+        <img src="http://www.pvhc.net/img205/bkxosrojgkapqkougaih.jpg" style="width:60px;height:60px;"></a>
+</body>
+</html>
